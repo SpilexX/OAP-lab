@@ -26,5 +26,7 @@ int main()
 		sum += c;
 	*/
 
-	cout << "Сумма: " << sum;
+	((a % 5 != 0) && (c % 5 != 0) && (b % 5 != 0))
+		? cout << "Error"
+		: cout << "Сумма: " << sum;
 }
