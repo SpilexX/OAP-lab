@@ -13,12 +13,20 @@ int main()
 	cout << "n = ";
 	cin >> n;
 
-	//todo: проверку недопустимых значений
-
-	if (abs(k - m) == abs(l - n))
-		cout << "Угрожает";
+	if (k < 1 || k > 8
+		|| m < 1 || m > 8
+		|| n < 1 || n > 8
+		|| (m == k && n == 1))
+	{
+		cout << "Error";
+	}
 	else
-		cout << "Не угрожает";
+	{
+		if (abs(k - m) == abs(l - n))
+			cout << "Угрожает";
+		else
+			cout << "Не угрожает";
+	}
 
 	cout << endl;
 }
