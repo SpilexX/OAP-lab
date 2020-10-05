@@ -6,7 +6,7 @@ int main()
 {
 	setlocale(LC_CTYPE, "Russian");
 	double m, n, p;
-	int i = 0;
+	cout << "Введите данные:" << endl;
 	cout << "m = ";
 	cin >> m;
 	cout << "n = ";
@@ -14,8 +14,10 @@ int main()
 	cout << "p = ";
 	cin >> p;
 
+	int i = 0;
+
 	if (m < 0)
-		i++;
+		i++; // i = i + 1;
 	if (n < 0)
 		i++;
 	if (p < 0)

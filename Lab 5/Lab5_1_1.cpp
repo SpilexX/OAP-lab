@@ -1,11 +1,12 @@
-#include <iostream>
+﻿#include <iostream>
 
 using namespace std;
 
 int main()
 {
 	setlocale(LC_CTYPE, "Russian");
-	double x, y, z;
+	double x, y, z, t;
+	cout << "Введите данные:" << endl;
 	cout << "x = ";
 	cin >> x;
 	cout << "y = ";
@@ -14,12 +15,26 @@ int main()
 	cin >> z;
 
 	if (x < y)
-		swap(x, y);
-	if (y < z)
-		swap(y, z);
-	if (x < y)
-		swap(x, y);
+	{
+		t = x;
+		x = y;
+		y = t;
+	}
 
-	cout << "\nВ отсортированном виде от большего к меньшему:\n";
+	if (y < z)
+	{
+		t = y;
+		y = z;
+		z = t;
+	}
+
+	if (x < y)
+	{
+		t = x;
+		x = y;
+		y = t;
+	}
+
+	cout << endl << "В отсортированном виде от большего к меньшему:" << endl;
 	cout << "x = " << x << ", y = " << y << ", z = " << z;
 }
