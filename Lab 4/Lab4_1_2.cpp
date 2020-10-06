@@ -6,7 +6,7 @@ int main()
 {
 	setlocale(LC_CTYPE, "Russian");
 	double d;
-	cout << "d = ";
-	cin >> d;
-	cout << "Сторона квадрата a = " << d / sqrt(2);
+	printf("d = ");
+	scanf_s("%lf", &d);
+	printf("Площадь квадрата S = %lf", d * d / 2);
 }
