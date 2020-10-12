@@ -18,7 +18,8 @@ int main()
 			cout << " m = " << m << endl;
 			h = (r * 10 - j) / (c * c + exp(-m));
 			y = (h * m - j * j) + pow(0.1 * c, 2);
-			printf(" h = %lf\n y = %lf\n\n", h, y);
+			cout << " h = " << h << endl;
+			cout << " y = " << y << endl << endl;
 			m += 0.5;
 		}
 	}
