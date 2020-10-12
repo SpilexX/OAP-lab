@@ -12,12 +12,14 @@ int main()
 	{
 		cout << "j = ";
 		cin >> j;
-		for (m = 1; m <= 2; m += 0.5)
+		m = 1;
+		while (m <= 2)
 		{
 			cout << " m = " << m << endl;
 			h = (r * 10 - j) / (c * c + exp(-m));
 			y = (h * m - j * j) + pow(0.1 * c, 2);
 			printf(" h = %lf\n y = %lf\n\n", h, y);
+			m += 0.5;
 		}
 	}
 }
