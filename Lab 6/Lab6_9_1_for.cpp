@@ -13,7 +13,7 @@ int main()
 	{
 		cout << "c = ";
 		cin >> c;
-		y = (s + c) / log(f) / exp(-5);
+		y = (s + c) / log(f) / exp(-s);
 		h = (y - m) / log(y);
 		printf(" y = %lf\n h = %lf\n", y, h);
 	}

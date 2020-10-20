@@ -13,7 +13,7 @@ int main()
 	while (c <= 0.9)
 	{
 		cout << "c = " << c << endl;
-		y = (s + c) / log(f) / exp(-5);
+		y = (s + c) / log(f) / exp(-s);
 		h = (y - m) / log(y);
 		printf(" y = %lf\n h = %lf\n", y, h);
 		c += 0.1;

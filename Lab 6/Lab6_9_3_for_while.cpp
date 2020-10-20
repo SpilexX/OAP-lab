@@ -16,7 +16,7 @@ int main()
 		while (c <= 0.5)
 		{
 			cout << "  c = " << c << endl;
-			y = (s + c) / log(f) / exp(-5);
+			y = (s + c) / log(f) / exp(-s);
 			h = (y - m) / log(y);
 			cout << "    y = " << y << endl;
 			cout << "    h = " << h << endl;
